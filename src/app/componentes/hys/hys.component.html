@@ -1,0 +1,123 @@
+<!-- [outerStrokeColor]="'#78C000'"  
+    NOTA:-Observar que se usa comilla simple y doble, analizar para números y booleanos.
+    NOTA2: Por defecto en el centro del círculo aparece el porcentaje, por ej 85%. Podemos reemplazarlo por un titulo con la popiedad [title]="'Título'", pero para que no aparezca el símbolo "%" hay que agregar también la propiedad [showUnits]="false".
+    NOTA3: También puedo sacar el título y poner una imagen en el centro, por ej. con las siguientes propiedades:
+    [imageSrc]="'../assets/html.png'"
+    [showImage]="true"
+    [imageHeight]="70"
+    [imageWidth]="70"
+    NOTA4: Por defecto viene un subtítulo ('progress') si queremos quitarlo usamos [showSubtitle]= "false".
+    NOTA5: Ver para qué sirve la propiedad [lazy]="true/false". Puede ser para que complete la barra de porcentaje, pero a partir de que se haga click (y en principio aparecería un punto solamente).
+    NOTA6: El valor de percent ([percent]="VALOR")luego provendrá de la BD.
+    NOTA7: HARD SKILLS (HABILIDADES O DESTREZAS DURAS): Lo que uno tuvo que aprender y practicar: html,css, javascript, python, java,etc. Y las SOFT SKILLS (HABILIDADES O DESTREZAS BLANDAS): poder comunicativo, compañerismo, etc. -->
+<div class="row">
+    <h1>Hard & Soft skills</h1>
+    <div class="text-center col-sm-4 col-md-4 col-lg-4"> <!-- HTML -->
+        <circle-progress
+            [percent]="95"
+            [radius]="100"
+            [showUnits]="false"
+            [imageSrc]="'../assets/html5.png'"
+            [showImage]="true"
+            [imageHeight]="70"
+            [imageWidth]="70"
+            [showSubtitle]= "false"
+            [outerStrokeWidth]="16"
+            [innerStrokeWidth]="4"
+            [outerStrokeColor]="'blue'" 
+            [innerStrokeColor]="'#C7E596'"
+            [animation]="true"
+            [animationDuration]="600"        
+        ></circle-progress>
+    </div>
+    <div class="text-center col-sm-4 col-md-4 col-lg-4"> <!-- CSS -->
+        <circle-progress
+            [percent]="90"
+            [radius]="100"
+            [showUnits]="false"
+            [imageSrc]="'../assets/css3.png'"
+            [showImage]="true"
+            [imageHeight]="70"
+            [imageWidth]="70"
+            [showSubtitle]= "false"
+            [outerStrokeWidth]="16"
+            [innerStrokeWidth]="4"
+            [outerStrokeColor]="'blue'" 
+            [innerStrokeColor]="'#C7E596'"
+            [animation]="true"
+            [animationDuration]="600"        
+        ></circle-progress>
+    </div>
+    <div class="text-center col-sm-4 col-md-4 col-lg-4"> <!-- JS -->
+        <circle-progress
+            [percent]="80"
+            [radius]="100"
+            [showUnits]="false"
+            [imageSrc]="'../assets/JS.png'"
+            [showImage]="true"
+            [imageHeight]="70"
+            [imageWidth]="70"
+            [showSubtitle]= "false"
+            [outerStrokeWidth]="16"
+            [innerStrokeWidth]="4"
+            [outerStrokeColor]="'blue'" 
+            [innerStrokeColor]="'#C7E596'"
+            [animation]="true"
+            [animationDuration]="600"        
+        ></circle-progress>
+    </div>
+    <div class="text-center col-sm-4 col-md-4 col-lg-4"> <!-- GITHUB -->
+        <circle-progress
+            [percent]="65"
+            [radius]="100"
+            [showUnits]="false"
+            [title]="'GitHub'"
+            [titleColor]="'pink'"
+            [titleFontSize]="'2em'"
+            [showSubtitle]= "false"
+            [outerStrokeWidth]="16"
+            [innerStrokeWidth]="4"
+            [outerStrokeColor]="'blue'" 
+            [innerStrokeColor]="'#C7E596'"
+            [animation]="true"
+            [animationDuration]="600"        
+        ></circle-progress>
+    </div>
+    <div class="text-center col-sm-4 col-md-4 col-lg-4"> <!-- INGLÉS -->
+        <circle-progress
+            [percent]="70"
+            [radius]="100"
+            [showUnits]="false"
+            [imageSrc]="'../assets/Ingles.png'"
+            [showImage]="true"
+            [imageHeight]="80"
+            [imageWidth]="80"            
+            [showSubtitle]= "false"
+            [outerStrokeWidth]="16"
+            [innerStrokeWidth]="4"
+            [outerStrokeColor]="'blue'" 
+            [innerStrokeColor]="'#C7E596'"
+            [animation]="true"
+            [animationDuration]="600"        
+        ></circle-progress>
+    </div>
+    <div class="text-center col-sm-4 col-md-4 col-lg-4"> <!-- TRABAJO EN GRUPO -->
+        <circle-progress
+            [percent]="100"
+            [radius]="100"
+            [showUnits]="false"
+            [imageSrc]="'../assets/enEquipo6.png'"
+            [showImage]="true"
+            [imageHeight]="80"
+            [imageWidth]="80"
+            [showSubtitle]= "false"
+            [outerStrokeWidth]="16"
+            [innerStrokeWidth]="4"
+            [outerStrokeColor]="'blue'" 
+            [innerStrokeColor]="'#C7E596'"
+            [animation]="true"
+            [animationDuration]="600"        
+        ></circle-progress>
+    </div>
+    
+</div>    
